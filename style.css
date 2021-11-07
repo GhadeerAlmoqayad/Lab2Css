@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+  }
+
+header{
+    background: white;
+    height: 100vh;
+}
+.nav{
+    height: 80px;
+    background: white;
+}
+
+  span{
+    color: blue;
+  }
+  .reve{
+      font-size: 30px;
+  }
+
+
+  .menu{
+      float: right;
+      list-style: none;
+      margin: 20px;
+  }
+.menu li{
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+ .menu li a{
+     text-decoration: none;
+     padding: 5px 10px;
+     font-family: sans-serif;
+     letter-spacing: 1px;
+ }
+
+ .menu li a:hover{
+    color: blue;
+
+ }
+ .s1{
+     position: relative;
+     text-align: center;
+     font-family: sans-serif;
+     color: rgb(100, 7, 7);
+     top: 200px;
+ }
+
+ .s2{
+    position: relative;
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(100, 7, 7);
+}
+.s2 h2{
+    font-size:40px;
+}
+
+.img-background{
+    position: fixed;
+    background: url(img1.jpg);
+
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    background-size: cover;
+
+}
+
+@media(min-aspect-ratio: 16/9){
+   .img-background{
+       width: 100%;
+       height: auto;
+    } 
+}
+
+@media(max-aspect-ratio: 16/9){
+   .img-background{
+       width: auto;
+       height: 100%;
+    } 
+}
