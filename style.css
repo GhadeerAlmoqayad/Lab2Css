@@ -7,6 +7,7 @@ body{
 header{
     background: white;
     height: 100vh;
+   
 }
 .nav{
     height: 80px;
@@ -19,7 +20,17 @@ header{
   .reve{
       font-size: 30px;
   }
-
+  .title{
+    font-size: 2rem;
+    color:black;
+  }
+  
+  button{
+        
+        font-size: 1.5rem;
+        border: 0.2rem solid rgb(231, 222, 169);
+        background-color: rgb(231, 222, 169);
+    }
 
   .menu{
       float: right;
@@ -42,47 +53,32 @@ header{
     color: blue;
 
  }
- .s1{
-     position: relative;
-     text-align: center;
-     font-family: sans-serif;
-     color: rgb(100, 7, 7);
-     top: 200px;
- }
-
- .s2{
+ .container {
     position: relative;
     text-align: center;
-    font-family: sans-serif;
-    color: rgb(100, 7, 7);
-}
-.s2 h2{
-    font-size:40px;
-}
+    color: white;
+  }
 
-.img-background{
-    position: fixed;
-    background: url(img1.jpg);
+  .s1 {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+  }
 
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -100;
-    background-size: cover;
-
-}
-
-@media(min-aspect-ratio: 16/9){
-   .img-background{
-       width: 100%;
-       height: auto;
-    } 
-}
-
-@media(max-aspect-ratio: 16/9){
-   .img-background{
-       width: auto;
-       height: 100%;
-    } 
-}
+  .s2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .btn{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
